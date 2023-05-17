@@ -1,4 +1,5 @@
-# c:\xampp\mysql\bin\mysql -uroot < C:\Users\AMD\AppData\Roaming\DBeaverData\workspace6\General\Scripts\zadatak_10.sql
+# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_10.sql
+
 
 drop database if exists zadatak_10;
 create database zadatak_10;
@@ -56,3 +57,41 @@ alter table zahvat_pacijent add foreign key (pacijent) references pacijent(id);
 
 alter table pacijent add foreign key (osoba) references osoba(id);
 
+
+
+insert into osoba (id,ime,prezime,telefon,email,DOB) values
+(null,'doktor_ime1','doktor_prezime1',null,null,null),
+(null,'doktor_ime2','doktor_prezime2',null,null,null),
+(null,'sestra_ime1','sestra_prezime1',null,null,null),
+(null,'sestra_ime2','sestra_prezime2',null,null,null),
+(null,'pacijent_ime1','pacijent_ime1',null,null,null),
+(null,'pacijent_ime2','pacijent_ime2',null,null,null);
+
+
+
+insert into doktor (id,iban,osoba) values
+(null,null,1),
+(null,null,2);
+
+
+
+insert into sestra (id,iban,osoba) values
+(null,null,3),
+(null,null,4);
+
+
+
+insert into pacijent (id,osoba) values
+(null,5),
+(null,6);
+
+
+
+insert into zahvat (id,naziv,doktor,sestra) values
+(null,'zahvat_1',2,2),
+(null,'zahvat_2',1,1);
+
+
+
+insert into zahvat_pacijent(zahvat,pacijent) values
+(1,1),(2,2);
