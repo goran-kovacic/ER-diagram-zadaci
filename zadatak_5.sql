@@ -1,3 +1,5 @@
+# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_5.sql
+
 drop database if exists zadatak_5;
 create database zadatak_5;
 use zadatak_5;
@@ -44,4 +46,22 @@ alter table djelo add foreign key (izlozba) references izlozba(sifra);
 alter table kustos add foreign key (osoba) references osoba(sifra);
 
 alter table sponzor add foreign key (osoba) references osoba(sifra);
+
+
+insert into osoba (sifra,ime,prezime,oib,kontakt) values
+(null,'ime1','prezime1',null, null),
+(null,'ime2','prezime2',null, null),
+(null,'ime3','prezime3',null, null);
+
+insert into kustos (osoba) values (1);
+
+insert into sponzor (osoba) values (2),(3);
+
+insert into izlozba (sifra,ime,kustos,sponzor) values
+(null,'izlozba1',1,1),
+(null,'izlozba2',1,2);
+
+insert into djelo (sifra,naziv,autor,izlozba) values
+(null,'djelo1','autor1',2),
+(null,'djelo2','autor2',1);
 
