@@ -1,9 +1,9 @@
-# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_10.sql
+# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_010.sql
 
 
-drop database if exists zadatak_10;
-create database zadatak_10;
-use zadatak_10;
+drop database if exists zadatak_010;
+create database zadatak_010;
+use zadatak_010;
 
 create table doktor(
     id int not null primary key auto_increment,

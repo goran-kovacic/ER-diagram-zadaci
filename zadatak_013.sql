@@ -1,8 +1,8 @@
-# c:\xampp\mysql\bin\mysql -uroot < C:\Users\AMD\AppData\Roaming\DBeaverData\workspace6\General\Scripts\zadatak_13.sql
+# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_013.sql
 
-drop database if exists zadatak_13;
-create database zadatak_13;
-use zadatak_13;
+drop database if exists zadatak_013;
+create database zadatak_013;
+use zadatak_013;
 
 create table razred(
     id int not null primary key auto_increment,

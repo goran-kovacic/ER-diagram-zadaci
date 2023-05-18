@@ -1,8 +1,8 @@
-# c:\xampp\mysql\bin\mysql -uroot < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_19.sql
+# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_019.sql
 
-drop database if exists zadatak_19;
-create database zadatak_19;
-use zadatak_19;
+drop database if exists zadatak_019;
+create database zadatak_019;
+use zadatak_019;
 
 
 create table nakladnik(

@@ -1,8 +1,8 @@
-# c:\xampp\mysql\bin\mysql -uroot < C:\Users\AMD\AppData\Roaming\DBeaverData\workspace6\General\Scripts\zadatak_14.sql
+# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_014.sql
 
-drop database if exists zadatak_14;
-create database zadatak_14;
-use zadatak_14;
+drop database if exists zadatak_014;
+create database zadatak_014;
+use zadatak_014;
 
 create table trgovina(
     id int not null primary key auto_increment,

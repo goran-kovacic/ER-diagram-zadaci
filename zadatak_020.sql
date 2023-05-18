@@ -1,8 +1,8 @@
-# c:\xampp\mysql\bin\mysql -uroot < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_20.sql
+# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_020.sql
 
-drop database if exists zadatak_20;
-create database zadatak_20;
-use zadatak_20;
+drop database if exists zadatak_020;
+create database zadatak_020;
+use zadatak_020;
 
 
 create table clan(

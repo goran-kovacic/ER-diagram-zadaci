@@ -1,8 +1,8 @@
-# c:\xampp\mysql\bin\mysql -uroot < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_18.sql
+# c:\xampp\mysql\bin\mysql -uroot --default_character_set=utf8 < C:\Users\AMD\Documents\GitHub\ER-diagram-zadaci\zadatak_018.sql
 
-drop database if exists zadatak_18;
-create database zadatak_18;
-use zadatak_18;
+drop database if exists zadatak_018;
+create database zadatak_018;
+use zadatak_018;
 
 create table odvjetnik(
     id int not null primary key auto_increment,
