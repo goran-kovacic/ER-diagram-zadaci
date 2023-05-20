@@ -67,3 +67,28 @@ alter table uslugaposjeta add foreign key (usluga) references usluga(id);
 
 alter table uslugaposjeta add foreign key (posjeta) references posjeta(id);
 
+insert into djelatnik (id,iban,ime,prezime,oib,radnoMjesto) values
+(null,null,'djelatnik_ime_1','djelatnik_prezime_1',null,'radnik');
+
+insert into djelatnik (id,iban,ime,prezime,oib,radnoMjesto) values
+(null,null,'djelatnik_ime_2','djelatnik_prezime_2',null,'radnik');
+
+insert into djelatnik (id,iban,ime,prezime,oib,radnoMjesto) values
+(null,null,'djelatnik_ime_3','djelatnik_prezime_3',null,'radnik');
+
+insert into operater (id,ime,prezime,email,oib,lozinka) values
+(null,'operater_1','operater_prezime_',null,null,null);
+
+insert into dijete (id,ime,imeRoditelja,prezime,telefon) values
+(null,'dijete_ime_1','imeRoditelja_1','prezime_dijete_1',null);
+
+insert into dijete (id,ime,imeRoditelja,prezime,telefon) values
+(null,'dijete_ime_2','imeRoditelja_2','prezime_dijete_2',null);
+
+insert into dijete (id,ime,imeRoditelja,prezime,telefon) values
+(null,'dijete_ime_3','imeRoditelja_3','prezime_dijete_3',null);
+
+update djelatnik set ime='Ana' where id=1;
+
+delete from djelatnik where id=2;
+
