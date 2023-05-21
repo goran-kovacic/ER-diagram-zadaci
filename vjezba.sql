@@ -92,3 +92,22 @@ update djelatnik set ime='Ana' where id=1;
 
 delete from djelatnik where id=2;
 
+insert into usluga(id,cijena,jedinicaMjere,naziv) values
+(null,20,'eur','PS5');
+
+insert into usluga(id,cijena,jedinicaMjere,naziv) values
+(null,15,'eur','xbox');
+
+insert into usluga(id,cijena,jedinicaMjere,naziv) values
+(null,20,'eur','switch');
+
+insert into posjeta(id,datumVrijemeDolaska,datumVrijemeOdlaska,napomena,djelatnik_id) values
+(null,'2022-12-10 13:30:00','2022-12-10 14:30:00',null,1);
+
+insert into posjeta(id,datumVrijemeDolaska,datumVrijemeOdlaska,napomena,djelatnik_id) values
+(null,'2022-12-10 15:30:00','2022-12-10 16:30:00',null,3);
+
+update posjeta set djelatnik_id=1 where id=2;
+
+
+
