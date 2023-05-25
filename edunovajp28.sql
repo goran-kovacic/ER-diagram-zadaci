@@ -153,23 +153,49 @@ insert into clan (grupa,polaznik) values
 -- Domaća zadaća:
 -- U sve baze koje ste kreirali na osnovu zadatka ERA osnovno unijeti u svaku tablicu po 3 - 5 redova
 
-insert into smjer (sifra,naziv,cijena,upisnina,trajanje,verificiran) values
-(null,'Serviser',900,100,200,true);
 
-insert into grupa (naziv,smjer,maxpolaznika,predavac) values
-('S1',4,10,1);
 
-insert into grupa (naziv,smjer,maxpolaznika,predavac) values
-('S2',4,10,1);
 
-insert into osoba (sifra,ime,prezime,oib,email) values
-(null,'ime1','prezime1',null,null),
-(null,'ime2','prezime2',null,null),
-(null,'ime3','prezime3',null,null);
 
-insert into polaznik (osoba) values
-(27),(28),(29);
+-- PROMJENA PODATAKA
 
-insert into clan (grupa,polaznik) values
-(4,26),(4,27),(4,28);
+--select * from smjer;
 
+-- ne izvoditi update bez where dijela update naredbe
+
+-- select * from smjer;
+
+update smjer set naziv='Java programiranje'
+where sifra=1;
+
+-- web programiranje cijena je 1000 eur i upisnina 50 eur
+update smjer set 
+cijena=1000,
+upisnina=50
+where sifra=2;
+
+-- svim smjerovima smanji cijenu za 10%
+update smjer set cijena=cijena*0.9;
+
+-- uvećaj cijenu svim smjerovima za 10 eur
+update smjer set cijena=cijena+10;
+
+-- select * from osoba;
+-- Kristi se odluči rastati želi 
+-- vratiti svoje prezime Novoselić
+-- PROVEDITE TO
+
+-- vanjski ključ 55 ne postoji kao primarni ključ 55 u tablici smjer
+-- update grupa set smjer=55 where sifra=1;
+
+
+-- BRISANJE PODATAKA
+
+-- DELETE naredbe su zakomentirane da nam ne pobrišu podatke
+-- delete from clan where grupa=1;
+-- delete from grupa where smjer=1;
+-- delete from smjer where sifra=1;
+
+
+-- Domaća zadaća: Za ponedjeljak (22. 05.) na svoj github postaviti 
+-- prvu verziju ER dijagrama završnog rada kao sliku s papira. 
