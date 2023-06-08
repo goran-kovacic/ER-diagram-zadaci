@@ -72,5 +72,6 @@ create table rating(
     id  int not null primary key auto_increment,
     naziv varchar(50),
     adresa varchar(50),
-    kontakt varchar(50)
+    kontakt varchar(50),
+    komentar text
  );
